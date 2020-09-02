@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(4, 120px);
+  gap: 5px;
+  border: 1px solid rgb(233, 222, 76);
+  box-shadow: 0 0 5px 2px rgb(233, 222, 76);
+}
+
+.gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
